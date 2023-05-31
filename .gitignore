@@ -9,7 +9,7 @@
 crash.log
 crash.*.log
 
-# Var fiels
+# Var files
 *.tfvars
 *.tfvars.json
 
