@@ -4,6 +4,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: taki-deployment
+  namespace: social-hub
 spec:
   replicas: 1
   selector:
@@ -37,6 +38,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: taki-service
+  namespace: social-hub
 spec:
   selector:
     app: taki
