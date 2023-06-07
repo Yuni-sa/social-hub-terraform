@@ -22,7 +22,7 @@ spec:
         resources:
           limits:
             memory: "512Mi"
-            cpu: "2000m"
+            cpu: "800m"
         ports:
         - containerPort: 3000
 YAML
