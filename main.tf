@@ -8,6 +8,6 @@ provider "kubernetes" {
 
 resource "kubernetes_namespace" "social-hub-ns" {
   metadata {
-    name = "social-hub"
+    name = var.socialhub-namespace
   }
 }

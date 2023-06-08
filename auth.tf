@@ -4,7 +4,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: golang-auth-deployment
-  namespace: social-hub
+  namespace: ${var.socialhub-namespace}
 spec:
   replicas: 1
   selector:
@@ -38,7 +38,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: golang-auth-service
-  namespace: social-hub
+  namespace: ${var.socialhub-namespace}
 spec:
   selector:
     app: golang-auth

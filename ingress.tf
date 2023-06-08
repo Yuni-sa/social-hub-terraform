@@ -6,7 +6,7 @@ metadata:
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /$1
   name: socialhub-ingress
-  namespace: social-hub
+  namespace: ${var.socialhub-namespace}
 spec:
   rules:
     - host: socialhub.com
